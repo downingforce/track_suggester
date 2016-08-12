@@ -7,26 +7,26 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-
     <div id="nav" class="container">
       <ul id="navbar" class="nav navbar-nav navbar-right">
-        <li><a href="http://www.github.com">Refresh</a></li>
+        <li><a href="https://downingforce.github.io/track_suggester/">Refresh</a></li>
         <li><a href="http://www.epicodus.com/portland/">Epicodus Tracks</a></li>
       </ul>
     </div>
-
     <div class="row">
-
       <div id="header" class="container col-md-4">
         <h1>WHAT EPICODUS LANGUAGE TRACK SHOULD I CHOOSE?</h1>
         <p>Epicodus offers so many different courses, we often get students unsure of what languages they should learn. However, deciding which track you should take doesn't have to hard! Take this simple survey to determine what track best fits your goals:</p>
         <button id="launch_survey" type="submit" class="btn btn-primary">TAKE THE SURVEY NOW</button>
       </div>
-
+      <div id="cover_image" class="jumbotron">
+        <p class="image">Explore the Epicodus Programming Tracks</p>
+      </div>
       <div id="survey" class="container col-md-6">
         <form class="form">
           <div id="name" class="form-group">
@@ -80,7 +80,6 @@
                 <option value="option3">Business Software</option>
               </select>
           </div>
-
           <button id="launch_modal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#answer_modal">SUBMIT SURVEY</button>
           <div class="modal fade" id="answer_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
@@ -90,7 +89,6 @@
                   <h4 class="modal-title"><span class="name"></span>, thanks for taking the survey!<br>Here's what we recommend for you:</h4>
                 </div>
                 <div class="modal-body">
-
                   <div id="android_track">
                     <p><strong>JAVA - ANDROID TRACK</strong></p>
                     <div id="java" class="container">
@@ -100,7 +98,6 @@
                       <img src="img/android.png" style="width:150px; height:150px;">
                     </div>
                   </div>
-
                   <div id="design_track">
                     <p><strong>CSS - DESIGN TRACK</strong></p>
                     <div id="css" class="container">
@@ -110,7 +107,6 @@
                       <img src="img/design.png" style="width:150px; height:150px;">
                     </div>
                   </div>
-
                   <div id="ruby_track">
                     <p><strong>RUBY - RAILS TRACK</strong></p>
                     <div id="ruby" class="container">
@@ -120,7 +116,6 @@
                       <img src="img/rails.png" style="width:150px; height:150px;">
                     </div>
                   </div>
-
                   <div id="net_track">
                     <p><strong>C# - .NET TRACK</strong></p>
                     <div id="c" class="container">
@@ -130,11 +125,9 @@
                       <img src="img/net.png" style="width:150px; height:150px;">
                     </div>
                   </div>
-
                   <div id="empty">
                     <p><strong>We didn't get that. Try Again!</strong></p>
                   </div>
-
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -142,11 +135,9 @@
               </div>
             </div>
           </div>
-
         </form>
       </div>
     </div>
-
   <p class="copyright"><span>Copyright (c) 2016 Copyright Holder All Rights Reserved.</span></p>
   </body>
 </html>

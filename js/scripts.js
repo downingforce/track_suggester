@@ -1,10 +1,8 @@
 $(document).ready(function(){
   $("#launch_survey").click(function(event) {
+    $("#cover_image").hide();
     $("#survey").show();
   });
-
-
-
   $("#survey").submit(function(event) {
     var name = $("input#user_name").val();
     var answer1 = $( "#question1 option:selected" ).text()
@@ -12,9 +10,7 @@ $(document).ready(function(){
     var answer3 = $( "#question3 option:selected" ).text()
     var answer4 = $( "#question4 option:selected" ).text()
     var answer5 = $( "#question5 option:selected" ).text()
-
     $(".name").text(name);
-
     if (answer1 === "Yes") {
       $("#design_track").show();
     } else if (answer1 === "No" && answer2 === "Java" || answer4 === "Mobile") {
@@ -26,10 +22,6 @@ $(document).ready(function(){
     } else {
       $("#wrong").show();
     }
-
-
     event.preventDefault();
   });
-
-
 });
