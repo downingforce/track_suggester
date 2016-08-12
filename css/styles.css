@@ -11,12 +11,24 @@ h1 {
   margin-top: 50px;
 }
 
-p {
+#header p {
   color: white;
   width: 150px;
   font-size: 1.4rem;
   margin-left: 25px;
   margin-top: 100px;
+}
+
+.copyright {
+  color: white;
+  width: 150px;
+  font-size: 1.4rem;
+  margin-left: 25px;
+  margin-top: 100px;
+}
+
+.form-control {
+  background-color: lightgrey;
 }
 
 button {
@@ -28,5 +40,29 @@ button {
 }
 
 #survey {
-  margin-top: 50px;
+  margin-top: 200px;
+}
+
+#survey label {
+  text-align: center;
+  color: white;
+}
+
+#survey button {
+  margin-left: 35%;
+}
+
+.modal-body p {
+  color: black;
+  text-align: center;
+}
+
+#android_track #java {
+    float:right;
+    width: 50%;
+}
+
+#android_track #android {
+    float: left;
+    width: 50%;
 }
