@@ -6,10 +6,18 @@
     <script src ="js/scripts.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+
+    <div id="nav" class="container">
+      <ul id="navbar" class="nav navbar-nav navbar-right">
+        <li><a href="http://www.github.com">Refresh</a></li>
+        <li><a href="http://www.epicodus.com/portland/">Epicodus Tracks</a></li>
+      </ul>
+    </div>
 
     <div class="row">
 
@@ -20,13 +28,17 @@
       </div>
 
       <div id="survey" class="container col-md-6">
-        <form>
+        <form class="form">
+          <div id="name" class="form-group">
+            <label for="user_name">What's your name?</label>
+            <input id="user_name" class="form-control" type="text">
+          </div>
           <div class="question1 form-group">
               <label for="question1">Do like working with Layouts &amp; Design?</label>
               <select class="form-control" id="question1">
                 <option></option>
                 <option value="option1">Yes</option>
-                <option value="option2">No</option>
+                <option value="no">No</option>
               </select>
           </div>
           <div class="question2 form-group">
@@ -69,54 +81,58 @@
               </select>
           </div>
 
-          <button id="launch_modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#answer_modal">SUBMIT SURVEY</button>
+          <button id="launch_modal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#answer_modal">SUBMIT SURVEY</button>
           <div class="modal fade" id="answer_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title">Thanks for taking the survey!<br>Here's what we recommend for you:</h4>
+                  <h4 class="modal-title"><span class="name"></span>, thanks for taking the survey!<br>Here's what we recommend for you:</h4>
                 </div>
                 <div class="modal-body">
 
-                  <div id="andriod_track">
+                  <div id="android_track">
                     <p><strong>JAVA - ANDROID TRACK</strong></p>
                     <div id="java" class="container">
-                      <img src="img/java.png" style="width:100px;">
+                      <img src="img/java.png" style="width:150px; height:150px;">
                     </div>
                     <div id="android" class="container">
-                      <img src="img/android.png" style="width:100px;">
+                      <img src="img/android.png" style="width:150px; height:150px;">
                     </div>
                   </div>
 
-                  <div id="drupal_track">
+                  <div id="design_track">
                     <p><strong>CSS - DESIGN TRACK</strong></p>
                     <div id="css" class="container">
-                      <img src="img/css.png" style="width:100px;">
+                      <img src="img/css.png" style="width:150px; height:150px;">
                     </div>
                     <div id="design" class="container">
-                      <img src="img/design.png" style="width:100px;">
+                      <img src="img/design.png" style="width:150px; height:150px;">
                     </div>
                   </div>
 
                   <div id="ruby_track">
                     <p><strong>RUBY - RAILS TRACK</strong></p>
                     <div id="ruby" class="container">
-                      <img src="img/ruby.png" style="width:100px;">
+                      <img src="img/ruby.png" style="width:150px; height:150px;">
                     </div>
                     <div id="rails" class="container">
-                      <img src="img/rails.png" style="width:100px;">
+                      <img src="img/rails.png" style="width:150px; height:150px;">
                     </div>
                   </div>
 
-                  <div id=".net_track">
+                  <div id="net_track">
                     <p><strong>C# - .NET TRACK</strong></p>
-                    <div id="c#" class="container">
-                      <img src="img/c.png" style="width:100px;">
+                    <div id="c" class="container">
+                      <img src="img/c.png" style="width:150px; height:150px;">
                     </div>
-                    <div id=".net" class="container">
-                      <img src="img/net.png" style="width:100px;">
+                    <div id="dotnet" class="container">
+                      <img src="img/net.png" style="width:150px; height:150px;">
                     </div>
+                  </div>
+
+                  <div id="empty">
+                    <p><strong>We didn't get that. Try Again!</strong></p>
                   </div>
 
                 </div>
