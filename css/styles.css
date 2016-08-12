@@ -11,6 +11,10 @@ h1 {
   margin-top: 50px;
 }
 
+#survey {
+  display: none;
+}
+
 #header p {
   color: white;
   width: 150px;
