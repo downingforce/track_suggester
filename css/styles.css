@@ -55,6 +55,17 @@ button {
 .modal-body p {
   color: black;
   text-align: center;
+  font-size: 3rem;
+}
+
+.modal-header {
+  background-color: maroon;
+  color: white;
+  font-size: 3rem;
+}
+
+.modal-body {
+  background-color: lightgrey;
 }
 
 #android_track #java {
