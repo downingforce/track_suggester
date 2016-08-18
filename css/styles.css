@@ -135,9 +135,9 @@ button {
     width: 50%;
 }
 
-#wrong {
-  text-align:
+#empty {
   display: none;
+  text-align:
 }
 
 #android_track {
